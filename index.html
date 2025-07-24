@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="inicioS.js" defer></script>
+    <script src="homebanking.js" defer></script>
+    <title>homebanking</title>
+  </head>
+  <body>
+    <div class="wrapper" style="display: none">
+      <h1>bienvenido al homebanking</h1>
+      <div id="login">
+        <h2>Inicio de sesión</h2>
+        <input type="text" id="usuario" placeholder="Ingresá tu nombre o DNI" />
+        <input
+          type="password"
+          id="clave"
+          placeholder="Ingresá tu Clave"
+          maxlength="4"
+        />
+        <button id="ingresar">Ingresar</button>
+        <p id="mensaje"></p>
+        <p id="registrado"></p>
+      </div>
+    </div>
+
+    <div id="homebanking">
+      <h2>Homebanking</h2>
+
+      <div class="saldo">
+        <div class="cbu">
+          <h3>Saldo</h3>
+          <h4>cbu:</h4>
+        </div>
+        <p id="saldo">0$</p>
+        <p class="alias" id="alias"></p>
+        <div class="botones">
+          <button>transferir</button>
+          <button>retirar</button>
+        </div>
+      </div>
+      <div class="transacciones">
+        <h3>Transacciones</h3>
+        <ul id="lista-transacciones"></ul>
+    </div>
+  </body>
+</html>
